@@ -12,9 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/8a60ea5289.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes customPulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .custom-pulse {
+            animation: customPulse 2s infinite;
+        }
+    </style>
 </head>
 
-<body style="font-family: Sora;">
+<body style="font-family: Sora;" class="overflow-x-hidden">
     <header>
         <div class="bg-[#FFF9F4]">
             <div class="lg:max-w-[1440px] mx-auto p-4 flex justify-between items-center">
@@ -43,7 +62,7 @@
                 <p class="font-bold md:text-xl mb-6" style="font-family: Sora;">Discover a world of treats, toys, and
                     essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                 <button style="font-family: Sora;"
-                    class="bg-yellow-300 text-black rounded-lg py-2 px-4 md:text-2xl">Find A Pet</button>
+                    class="bg-yellow-300 text-black rounded-lg py-2 px-4 md:text-2xl custom-pulse">Find A Pet</button>
             </div>
             <div class="absolute bottom-10 z-10 md:-top-0 ">
                 <img class="w-full" src="assets/cat-big.png" alt="cat-big">
@@ -54,42 +73,34 @@
         <section class="md:max-w-[1440px] mx-auto md:py-36 p-5">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img
-                    src="assets/pet-food.jpg"
-                    class="w-full" />
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
+                    <img src="assets/pet-food.jpg" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img
-                    src="assets/bird-pet.jpg"
-                    class="w-full" />
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
+                    <img src="assets/bird-pet.jpg" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                  <img
-                    src="assets/cat-pet.jpg"
-                    class="w-full" />
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
+                    <img src="assets/cat-pet.jpg" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                  <img
-                    src="assets/dog-pet.jpg"
-                    class="w-full" />
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+                    <img src="assets/dog-pet.jpg" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <section class="md:max-w-[1440px] mx-auto md:py-36 p-5">
             <h1 class="md:text-4xl text-2xl font-bold mb-8" style="font-family: 'ADLaM Display';">Browse By Categories
@@ -290,7 +301,8 @@
         </section>
     </main>
     <footer class="relative bg-[#FFDC2650] md:h-[540px] h-[610px]">
-        <div class="md:max-w-[1440px] h-[553px] w-[375px] md:w-full md:py-16 px-4 md:px-0 flex md:flex-row flex-col gap-10 bg-[#FFF9F4] rounded-xl absolute md:left-[236px] md:-top-1/2 -top-1/2 left-5 pt-2">
+        <div
+            class="md:max-w-[1440px] h-[553px] w-[375px] md:w-full md:py-16 px-4 md:px-0 flex md:flex-row flex-col gap-10 bg-[#FFF9F4] rounded-xl absolute md:left-[236px] md:-top-1/2 -top-1/2 left-5 pt-2">
             <div class="w-[190px] mx-auto md:pl-36 md:w-1/2">
                 <img src="assets/cute-pet-mid.png" alt="Dog">
             </div>
@@ -298,41 +310,44 @@
                 <h1 class="font-bold text-lg md:text-3xl mb-4">Get Pawsome News!</h1>
                 <p class="font-bold text-base mb-1 md:mb-4">Exclusive Training tips, tricks, Product deals and more.</p>
                 <div class="mb-5 items-center w-full md:w-3/4 py-2">
-                    <input type="email" placeholder="Enter email..." class="text-gray-300 py-4 pl-4 w-10/12 text-xs rounded-xl">
+                    <input type="email" placeholder="Enter email..."
+                        class="text-gray-300 py-4 pl-4 w-10/12 text-xs rounded-xl">
                 </div>
                 <button class="btn py-4 px-8 bg-yellow-300 text-xs md:text-xl">Subscribe</button>
             </div>
         </div>
         <div class="md:max-w-[1440px] md:w-[1440px]">
-            <div class="md:w-[1440px] flex flex-col md:flex-row md:items-center justify-between py-10 absolute bottom-0 md:bottom-4 md:left-[236px] px-4">
+            <div
+                class="md:w-[1440px] flex flex-col md:flex-row md:items-center justify-between py-10 absolute bottom-0 md:bottom-4 md:left-[236px] px-4">
                 <div>
                     <div class="flex gap-3 items-center">
                         <img src="assets/logo-footer.png" alt="logo">
                         <h1 class="text-2xl mb-2">Browse<span class="text-yellow-500">4</span>Pets</h1>
                     </div>
-                    <p class="mb-4">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                    <p class="mb-4">Discover a world of treats, toys, and essentials handpicked for your furry friends
+                    </p>
                 </div>
                 <nav class="flex flex-col md:flex-row mb-4 gap-4">
-                  <a class="link link-hover">Find a pet</a>
-                  <a class="link link-hover">Breeds</a>
-                  <a class="link link-hover">Contact Us</a>
+                    <a class="link link-hover">Find a pet</a>
+                    <a class="link link-hover">Breeds</a>
+                    <a class="link link-hover">Contact Us</a>
                 </nav>
                 <nav>
-                  <h6 class="footer-title text-black">Follow Us</h6>
-                  <div class="flex gap-4 text-xl">
-                    <a>
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a>
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a>
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                  </div>
+                    <h6 class="footer-title text-black">Follow Us</h6>
+                    <div class="flex gap-4 text-xl">
+                        <a>
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                 </nav>
             </div>
         </div>
