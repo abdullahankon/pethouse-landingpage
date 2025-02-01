@@ -14,3 +14,14 @@ module.exports = {
       },
     },
   }
+  module.exports = {
+    theme: {
+      extend: {
+        colors: {
+          'custom-yellow': 'rgba(255, 220, 38, 0.5)', // Custom RGBA color
+        },
+      },
+    },
+    plugins: [],
+  }
+  
